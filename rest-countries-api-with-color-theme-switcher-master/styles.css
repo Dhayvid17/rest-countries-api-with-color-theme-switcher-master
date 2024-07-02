@@ -1,0 +1,501 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: hsl(207, 26%, 17%);
+    font-family: 'Nunito Sans', sans-serif;
+    position: relative;
+}
+
+.bodyLightMode {
+    background-color: hsl(0, 0%, 98%);
+    Color: hsl(200, 15%, 8%);
+}
+
+.lightMode {
+    background-color: hsl(0, 0%, 100%);
+    box-shadow: 0px 2px 10px 2px rgba(0, 0, 0, 0.5);
+    Color: hsl(200, 15%, 8%);
+}
+
+header {
+    align-items: center;
+    background-color: hsl(209, 23%, 22%);
+    color: white;
+    display: flex;
+    height: 10vh;
+    justify-content: space-between;
+    padding: 0px 50px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+header h4 {
+    font-size: 20px;
+}
+
+header div:nth-child(2) {
+    color: white;
+    display: flex;
+    font-size: 11px;
+    font-weight: 600;
+    justify-content: flex-end;
+    width: 90px;
+}
+
+.toggle-box {
+    cursor: pointer;
+}
+
+.moon-regular {
+    display: none;
+    margin-right: 10px;
+    width: 11%;
+}
+
+.moon-solid {
+    display: block;
+    margin-right: 10px;
+    width: 11%;
+}
+
+main {
+    margin-top: 100px;
+    padding: 0px 50px;
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 0px;
+    width: 100%;
+}
+
+.form-control input {
+    background-color: hsl(209, 23%, 22%);
+    background-image: url(Images/magnifying-glass-solid.svg);
+    background-position: 20px;
+    background-repeat: no-repeat;
+    background-size: 15px, 40px;
+    border: none;
+    border-radius: 7px;
+    color: white;
+    cursor: pointer;
+    height: 6vh;
+    padding-left: 20px;
+    width: 400px;
+}
+
+.form-control input:focus{
+    outline: none;
+}
+
+.search::placeholder {
+    color: white;
+    font-size: 12px;
+    padding-left: 40px;
+}
+
+.active::placeholder {
+    color: hsl(0, 0%, 52%);
+    font-size: 12px;
+    padding-left: 40px;
+}
+
+.filter-box {
+    align-items: center;
+    background-color: hsl(209, 23%, 22%);
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    font-size: 13px;
+    height: 5vh;
+    justify-content: space-between;
+    padding: 0px 15px;
+    width: 180px;
+}
+
+.drop-down .filter-box img {
+    width: 7%;
+}
+
+.drop-down-list {
+    background-color: hsl(209, 23%, 22%);
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+    line-height: 1.5em;
+    margin-top: 5px;
+    padding: 15px;
+    position: absolute;
+    width: 180px;
+}
+
+.drop-down-list p {
+    color: white;
+    font-size: 13px;
+}
+
+.countries {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
+    grid-gap: 49px;
+    margin: 40px 0px;
+    width: 100%;
+}
+
+.country {
+    background-color: hsl(209, 23%, 22%);
+    border-radius: 8px;
+    cursor: pointer;
+    height: 46vh;
+    overflow: hidden;
+}
+
+.flag-box {
+    height: 24vh;
+}
+
+.flag-box img {
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+
+.country-info {
+    padding: 10px 5px 30px 15px;
+}
+
+.country-info h4 {
+    color: white;
+    font-size: 17px;
+    margin: 10px 0px;
+}
+
+.country-info p {
+    color: hsl(0, 0%, 100%);
+    font-size: 14px;
+    line-height: 1.5em;
+}
+
+.section {
+    background-color: hsl(207, 26%, 17%);
+    height: 100%;
+    left: 0;
+    padding: 50px 50px;
+    position: fixed;
+    top: 10%;
+    width: 100%;
+}
+
+.back-btn button {
+    align-items: center;
+    background-color: hsl(209, 23%, 22%);
+    border: none;
+    border-radius: 4px;
+    color: white;
+    display: flex;
+    height: 5vh;
+    justify-content: center;
+    width: 100px;
+}
+
+.back-btn button img {
+    margin-right: 8px;
+    width: 12%;
+}
+
+.countryBox {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.leftSideBox {
+    height: 47vh;
+    width: 550px;
+}
+
+.leftSideBox img {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+
+.rightSideBox {
+    align-self: center;
+    width: 550px;
+}
+
+.rightSideBox h4 {
+    color: white;
+    font-size: 21px;
+    letter-spacing: 1.5px;
+    margin: 10px 0px;
+}
+
+.innerBox {
+    align-items: start;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+.innerLeft span {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.innerLeft p {
+    color: hsl(0, 0%, 100%);
+    font-size: 14px;
+    line-height: 2.5em;
+}
+
+.innerRight span {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.innerRight p {
+    color: hsl(0, 0%, 100%);
+    font-size: 14px;
+    line-height: 2.5em;
+}
+
+.border-box {
+    margin-top: 30px;
+}
+
+.border-box p {
+    color: hsl(0, 0%, 100%);
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.border-box span {
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 1.5px;
+}
+
+.showInfo {
+    display: none;
+}
+
+
+/* RESPONSIVE STYLES */
+
+@media screen and (max-width: 1200px) {
+    
+    .form-control input {
+        padding-left: 40px;
+    }
+  
+    .leftSideBox {
+        height: 47vh;
+        width: 450px;
+    }
+
+    .rightSideBox {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .leftSideBox {
+        height: 47vh;
+        width: 400px;
+    }
+
+    .rightSideBox {
+        width: 350px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .leftSideBox {
+        height: 47vh;
+        width: 400px;
+    }
+
+    .rightSideBox {
+        width: 300px;
+    }
+
+    .innerBox {
+        flex-direction: column;
+        margin-top: 0px;
+
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .leftSideBox {
+        height: 47vh;
+        width: 350px;
+    }
+
+    .rightSideBox {
+        width: 300px;
+    }
+
+    .innerBox {
+        flex-direction: column;
+        margin-top: 0px;
+
+    }
+}
+
+@media screen and (max-width: 800px) {
+    header {
+        height: 7vh;
+        padding: 0px 30px;
+    }
+
+    header h4 {
+        font-size: 16px;
+    }
+
+    main{
+        padding: 0px 30px;
+    }
+
+    .form-control input{
+        width: 300px;
+    }
+
+    .filter-box {
+        font-size: 12px;
+        width: 140px;
+    }
+
+    .drop-down-list{
+        width: 140px;
+    }
+
+    .drop-down-list p{
+        font-size: 12px;
+    }
+
+    .section {
+        padding: 20px 30px;
+        top: 7%;
+    }
+
+    .back-btn button {
+        font-size: 12px;
+        height: 4vh;
+        width: 70px;
+    }
+
+    .countryBox {
+        align-items: start;
+        flex-direction: column;
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    .leftSideBox {
+        height: 30vh;
+        width: 300px;
+    }
+
+    .rightSideBox {
+        align-self: flex-start;
+        margin-top: 30px;
+        width: 300px;
+    }
+
+    .rightSideBox h4 {
+        font-size: 17px;
+        margin: 10px 0px;
+    }
+
+    .innerBox {
+        flex-direction: column;
+        margin-top: 0px;
+    }
+
+    .innerLeft span {
+        font-size: 13px;
+    }
+
+    .innerLeft p {
+        font-size: 11px;
+        line-height: 2em;
+    }
+
+    .innerRight{
+        margin-top: 25px;
+    }
+
+    .innerRight span {
+        font-size: 13px;
+    }
+
+    .innerRight p {
+        font-size: 11px;
+        line-height: 2em;
+    }
+
+    .border-box {
+        margin-top: 15px;
+    }
+
+    .border-box p {
+        font-size: 13px;
+    }
+
+    .border-box span {
+        font-size: 11px;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+
+    .container{
+        flex-direction: column;
+    }
+    .form-control input{
+        width: 300px;
+    }
+
+    .filter-box {
+        font-size: 12px;
+        margin-top: 40px;
+        width: 180px;
+    }
+
+    .drop-down-list{
+        width: 180px;
+    }
+
+    .drop-down-list p{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+header h4{
+    font-size: 14px;
+}
+
+header div:nth-child(2) {
+    font-size: 10px;
+    font-weight: 400;
+}
+
+
+}
